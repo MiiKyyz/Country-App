@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CountryInfoApp.MainPage">
+
+
+    <ScrollView>
+
+
+        <StackLayout>
+
+
+            <Label
+                  Text="Welcome to Country Data Search"
+                  Style="{StaticResource Headline}"
+                  x:Name="Labels"
+                 />
+
+
+
+            <Label
+                  Text="Welcome to Country Data Search"
+                  FontSize="15"
+                  x:Name="Countlabel"
+                  VerticalOptions="Start"
+                 />
+
+            <SearchBar 
+     
+                  Placeholder="Enter Country's name"
+                  x:Name="EntryName" />
+
+           
+
+            <ListView x:Name="MyListCountry"  SelectionMode="None" HasUnevenRows="true" >
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <ViewCell>
+
+                            <Border Stroke="DimGray"
+                                    StrokeThickness="0"
+                                    StrokeShape="RoundRectangle 20"
+                                    Background="#18cf00"
+                                    Margin="{OnPlatform Android='6', WinUI='15'}" Padding="{OnPlatform Android='2', WinUI='10'}"
+                                    HorizontalOptions="FillAndExpand">         
+
+
+                                <StackLayout Margin="5" Padding="5" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+
+                                    <Image x:Name="Img" Source="{Binding Flags}" WidthRequest="{OnPlatform Android='100', WinUI='80'}" HeightRequest="{OnPlatform Android='50', WinUI='80'}"/>
+
+
+                                    <StackLayout Margin="5" Padding="5" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+
+                                        <Label Text="{Binding CountryName}" FontSize="Title" FontAttributes="Bold"  TextColor="#041f00"/>
+                                        <Label Text="{Binding OfficialName}" FontSize="Subtitle"  TextColor="#041f00" />
+
+                                    </StackLayout>
+
+
+
+
+
+                                </StackLayout>
+
+                            </Border>
+
+
+                        </ViewCell>
+                        
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+
+
+            </ListView>
+
+
+        </StackLayout>
+
+
+    </ScrollView>
+
+  
+
+
+
+
+</ContentPage>

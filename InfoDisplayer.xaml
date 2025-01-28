@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CountryInfoApp.InfoDisplayer"
+             Title="InfoDisplayer">
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <HorizontalStackLayout>
+
+
+                <Label 
+                    Style="{StaticResource SubHeadline}"
+                    FontSize="Medium"
+                    x:Name="IndependaceLabel"
+                    Text="Country Independence: "
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+
+
+                <Image
+                    WidthRequest="{OnPlatform Android='70', WinUI='70'}"
+                    HeightRequest="{OnPlatform Android='35', WinUI='35'}"
+                    x:Name="IndependaceImage"
+                    
+                    
+                    />
+
+
+
+            </HorizontalStackLayout>
+
+
+            <HorizontalStackLayout>
+
+
+                <Label 
+                    Style="{StaticResource SubHeadline}"
+                    FontSize="Medium"
+                    x:Name="UNMemberLabel"
+                    Text="United Nation Member: "
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+
+
+                <Image
+                    WidthRequest="{OnPlatform Android='70', WinUI='70'}"
+                    HeightRequest="{OnPlatform Android='35', WinUI='35'}"
+                    x:Name="UNMemberImage"
+        
+        
+                    />      
+
+
+
+            </HorizontalStackLayout>
+
+
+            <Label 
+                Style="{StaticResource Headline}"
+                FontSize="Title"
+                x:Name="CountryNameLabel"
+                Text="Welcome to .NET MAUI!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Label 
+                Style="{StaticResource SubHeadline}"
+                FontSize="Subtitle"
+                x:Name="OfficialNameLabel"
+                Text="Welcome to .NET MAUI!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Label 
+                Style="{StaticResource SubHeadline}"
+                FontSize="Medium"
+                x:Name="abbreviationsLabel"
+                Text="Welcome to .NET MAUI!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+
+
+            <Image
+                x:Name="FlagImage"
+                WidthRequest="{OnPlatform Android='180', WinUI='180'}"
+                HeightRequest="{OnPlatform Android='90', WinUI='90'}"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <BoxView 
+                
+                
+                BackgroundColor="#3b7d32"
+                VerticalOptions="FillAndExpand" 
+                HorizontalOptions="FillAndExpand"
+                HeightRequest="4"
+                />
+
+            <Label 
+                Style="{StaticResource SubHeadline}"
+                FontSize="Medium"
+                x:Name="ContinentsNameLabel"
+                Text="Welcome to .NET MAUI!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start" />
+
+            <BoxView 
+     
+     
+                 BackgroundColor="#3b7d32"
+                 VerticalOptions="FillAndExpand" 
+                 HorizontalOptions="FillAndExpand"
+                HeightRequest="4"
+                 />
+
+            <Label 
+                Style="{StaticResource SubHeadline}"
+                FontSize="Medium"
+                x:Name="RegionsNameLabel"
+                Text="Welcome to .NET MAUI!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start" />        
+
+
+            <BoxView 
+     
+     
+                 BackgroundColor="#3b7d32"
+                 VerticalOptions="FillAndExpand" 
+                 HorizontalOptions="FillAndExpand"
+                HeightRequest="4"
+                 />
+
+
+
+            <Label 
+                Style="{StaticResource SubHeadline}"
+                FontSize="Medium"
+                x:Name="subregionLabel"
+                Text="Welcome to .NET MAUI!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start" />
+
+
+            
+            <BoxView 
+     
+     
+                 BackgroundColor="#3b7d32"
+                 VerticalOptions="FillAndExpand" 
+                 HorizontalOptions="FillAndExpand"
+                 HeightRequest="4"
+                 />
+
+            <Label 
+                Style="{StaticResource SubHeadline}"
+                FontSize="Medium"
+                x:Name="PopulationNameLabel"
+                Text="Welcome to .NET MAUI!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start" />
+            
+            <BoxView 
+     
+     
+                 BackgroundColor="#3b7d32"
+                 VerticalOptions="FillAndExpand" 
+                 HorizontalOptions="FillAndExpand"
+                HeightRequest="4"
+                 />
+
+
+            <Label 
+                Style="{StaticResource SubHeadline}"
+                FontSize="Medium"
+                x:Name="CapitalNameLabel"
+                Text="Welcome to .NET MAUI!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start" />        
+
+
+            <BoxView 
+     
+     
+                  BackgroundColor="#3b7d32"
+                  VerticalOptions="FillAndExpand" 
+                  HorizontalOptions="FillAndExpand"
+                  HeightRequest="4"
+     
+                  />
+
+
+            <Image
+                
+                x:Name="ImageCoatOfArms"
+                WidthRequest="{OnPlatform Android='180', WinUI='180'}"
+                HeightRequest="{OnPlatform Android='90', WinUI='90'}"
+                
+                />
+
+            <BoxView 
+     
+     
+                  BackgroundColor="#3b7d32"
+                  VerticalOptions="FillAndExpand" 
+                  HorizontalOptions="FillAndExpand"
+                  HeightRequest="4"
+     
+                  />
+
+
+            <Label 
+                Style="{StaticResource SubHeadline}"
+                FontSize="Medium"
+                x:Name="LatitudeLabel"
+                Text="Welcome to .NET MAUI!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start" />
+
+
+            <BoxView 
+     
+     
+                  BackgroundColor="#3b7d32"
+                  VerticalOptions="FillAndExpand" 
+                  HorizontalOptions="FillAndExpand"
+                  HeightRequest="4"
+     
+                  />
+
+            <Label 
+                    Style="{StaticResource SubHeadline}"
+                    FontSize="Medium"
+                    x:Name="LongitudeLabel"
+                    Text="Welcome to .NET MAUI!"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Start" />
+
+
+            <BoxView 
+     
+     
+                  BackgroundColor="#3b7d32"
+                  VerticalOptions="FillAndExpand" 
+                  HorizontalOptions="FillAndExpand"
+                  HeightRequest="4"
+     
+                  />
+
+
+            <Label 
+                Style="{StaticResource SubHeadline}"
+                FontSize="Medium"
+                x:Name="LanguagesLabel"
+                Text="Welcome to .NET MAUI!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start" />
+
+
+
+            <BoxView 
+     
+     
+                  BackgroundColor="#3b7d32"
+                  VerticalOptions="FillAndExpand" 
+                  HorizontalOptions="FillAndExpand"
+                  HeightRequest="4"
+     
+                  />
+
+
+
+            <Border x:Name="GoogleMapsButton" BackgroundColor="#3b7d32"  Margin="{OnPlatform Android='2', WinUI='10'}" Padding="{OnPlatform Android='2', WinUI='10'}">
+
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="GoogleMapsButtonTapped" />
+                </Border.GestureRecognizers>
+                <Grid  RowDefinitions="*,*"
+                        ColumnDefinitions="*,*">
+                    <Image
+                          Grid.Row="0" Grid.Column="0"
+                         Source="google.png"
+                         WidthRequest="{OnPlatform Android='180', WinUI='180'}"
+                         HeightRequest="{OnPlatform Android='90', WinUI='90'}"
+                            HorizontalOptions="End"
+                         />
+
+                    <Label
+                         Grid.Row="0" Grid.Column="1"
+                         Text="Google Maps"
+     
+                         VerticalOptions="Center"
+                         HorizontalOptions="Start"
+                         />
+
+
+
+                </Grid>
+                
+                
+                
+                
+
+
+            </Border>
+
+            <Border x:Name="OpenStreetMapsButton" BackgroundColor="#3b7d32"  Margin="{OnPlatform Android='2', WinUI='10'}" Padding="{OnPlatform Android='2', WinUI='10'}">
+
+
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnOpenStreetMapsTapped" />
+                </Border.GestureRecognizers>
+
+                <Grid  RowDefinitions="*,*"  ColumnDefinitions="*,*">
+
+
+
+                    <Image
+                        Grid.Row="0" Grid.Column="0"
+                         Source="street.jpg"
+                         WidthRequest="{OnPlatform Android='180', WinUI='180'}"
+                         HeightRequest="{OnPlatform Android='90', WinUI='90'}"
+                        HorizontalOptions="End"
+                         />
+
+                    <Label
+                        Grid.Row="0" Grid.Column="1"
+                         Text="Open Street Maps"
+                         VerticalOptions="Center"
+                         HorizontalOptions="Start"
+             
+                         />
+
+
+
+                </Grid>
+
+
+            </Border>
+
+            <BoxView 
+     
+     
+                  BackgroundColor="#3b7d32"
+                  VerticalOptions="FillAndExpand" 
+                  HorizontalOptions="FillAndExpand"
+                  HeightRequest="4"
+     
+                  />
+
+            <Label 
+                Style="{StaticResource Headline}"
+                FontSize="Medium"
+                x:Name="CountryLabelNews"
+                Text="Welcome to .NET MAUI!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+
+            <BoxView 
+     
+     
+                  BackgroundColor="#3b7d32"
+                  VerticalOptions="FillAndExpand" 
+                  HorizontalOptions="FillAndExpand"
+                  HeightRequest="4"
+     
+                  />
+
+
+            <ListView x:Name="NewsList" HasUnevenRows="True"  SelectionMode="None">
+
+
+                <ListView.ItemTemplate>
+
+
+                    <DataTemplate>
+
+                        <ViewCell>
+
+
+
+                            <Border Stroke="DimGray"
+                                    StrokeThickness="0"
+                                    StrokeShape="RoundRectangle 20,20,20,20"
+                                    Background="#18cf00"
+                                    
+                                    Margin="{OnPlatform Android='2', WinUI='10'}" Padding="{OnPlatform Android='2', WinUI='10'}"
+                                    HorizontalOptions="FillAndExpand">
+
+                                <VerticalStackLayout Margin="5" Padding="5" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+                                    <Label Text="{Binding NewsHeadline}" FontSize="{OnPlatform Android='14', WinUI='35'}" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    <Image Source="{Binding ImageString}" WidthRequest="{OnPlatform Android='200', WinUI='150'}" HeightRequest="{OnPlatform Android='200', WinUI='150'}"/>
+                                    
+                                    <Label Text="{Binding Datetime}" 
+                                           HorizontalOptions="End" 
+                                           FontSize="Micro" 
+                                           TextColor="#041f00"
+                                           Padding="{OnPlatform Android='2', WinUI='3'}" 
+                                           Margin="{OnPlatform Android='2', WinUI='3'}"/>
+                                    <Label Text="{Binding WrittenBy}" 
+                                           HorizontalOptions="End" 
+                                           FontSize="Micro" 
+                                           TextColor="#041f00"
+                                           Padding="{OnPlatform Android='2', WinUI='3'}" 
+                                           Margin="{OnPlatform Android='2', WinUI='3'}"/>
+
+                                </VerticalStackLayout>
+                                
+                                
+                                
+                            </Border>
+                            
+                            
+                        </ViewCell>
+                        
+                        
+                        
+                    </DataTemplate>
+                    
+                    
+                    
+                    
+                </ListView.ItemTemplate>
+                
+                
+                
+                
+            </ListView>
+
+
+            <Label 
+                
+                FontSize="Small"
+                x:Name="CopyRightLabel"
+                Text="Welcome to .NET MAUI!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+
+
+        </VerticalStackLayout>
+
+
+    </ScrollView>
+    
+    
+</ContentPage>
